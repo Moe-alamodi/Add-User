@@ -12,7 +12,7 @@ const UserInput = (props) => {
       inputInfo.age.trim().length === 0
     ) {
       props.displayError({
-        title: "Invald Inputs",
+        title: "Invalid Inputs",
         message: "All fields must be filled",
       });
       return;
