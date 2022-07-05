@@ -1,0 +1,9 @@
+.user {
+  padding: 0.3rem;
+  border: 1px solid rgb(130, 126, 126);
+  color: black;
+  border-radius: 5px;
+}
+li {
+  list-style: none;
+}
