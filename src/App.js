@@ -17,11 +17,12 @@ function App() {
   };
   const addUserHandler = (user) => {
     setUsers((prevUsers) => {
+      user.id = Math.floor(Math.random() * 100) + `E`;
       return [user, ...prevUsers];
     });
   };
   return (
-    <div className="App">
+    <React.Fragment>
       {modal && (
         <Modal
           title={error.title}
@@ -31,7 +32,7 @@ function App() {
       )}
       <UserInput onAdd={addUserHandler} displayError={displayModal} />
       <UsersList users={users} />
-    </div>
+    </React.Fragment>
   );
 }
 

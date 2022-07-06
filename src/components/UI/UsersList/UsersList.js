@@ -4,7 +4,7 @@ import styles from "./UsersList.module.css";
 
 const UsersList = (props) => {
   let content = props.users.map((user) => (
-    <UserItem id={user.id}>
+    <UserItem key={user.id}>
       {user.name} ({user.age}) years old
     </UserItem>
   ));
